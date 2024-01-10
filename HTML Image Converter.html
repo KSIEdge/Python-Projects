@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- This was used to layer and export an image and the alpha image together for Fate modding -->
+  <title>Upload and Blend Images</title>
+  <style>
+    #container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+    #image1, #image2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="image1" src="image1.jpg" alt="Image 1">
+    <img id="image2" src="image2.jpg" alt="Image 2">
+  </div>
+</body>
+</html>
+<input type="file" id="file1">
+<input type="file" id="file2">
+
+<script>
+  const file1 = document.getElementById('file1');
+  const file2 = document.getElementById('file2');
+  const image1 = document.getElementById('image1');
+  const image2 = document.getElementById('image2');
+
+  file1.addEventListener('change', () => {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+      image1.src = reader.result;
+    });
+    reader.readAsDataURL(file1.files[0]);
+  });
+
+  file2.addEventListener('change', () => {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+      image2.src = reader.result;
+    });
+    reader.readAsDataURL(file2.files[0]);
+  });
+</script>
