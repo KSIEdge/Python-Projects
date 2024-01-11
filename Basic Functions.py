@@ -1,9 +1,6 @@
 Conditional statements
 The following keywords and operators are used in conditional statements.
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 == != < > <= >= and or not
-
 if
 if value in list:
 elif
