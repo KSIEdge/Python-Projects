@@ -15,6 +15,15 @@ for value in list:
 for i in list:
 for i in range(int):
 
+""" EXAMPLE """
+
+
+
 while value < int:
 break
 continue
+
+""" EXAMPLE """
+while i <= 5150:
+    print (i)
+    i = i + 5
