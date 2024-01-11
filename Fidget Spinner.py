@@ -1,6 +1,7 @@
 import sys
 import time
 
+#creates a spinner in console
 def spinning_cursor():
     while True:
         for cursor in '|/-\\':
