@@ -169,8 +169,8 @@ def update_file(important_file, remove_list):
         # Rewrite the file, replacing its contents with `ip_addresses`
         file.write(ip_addresses)
 
-  #10
-  # Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
+#10
+# Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
 # and combines the steps you've written in this lab leading up to this
 def update_file(import_file, remove_list):
   # Build `with` statement to read in the initial contents of the file
