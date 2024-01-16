@@ -1,14 +1,14 @@
 @echo off
-title Fate Cache Remover Tool
+title Fate Cache Reset Tool
 color 1
 echo ===================================================================
-echo Fate Cache Remover Tool
+echo Fate Cache Reset Tool
 echo v1.0
 echo ===================================================================
 echo Make Sure Cache Is The Correct Directory
 echo -------------------------------------------------------------------
 :loop
-echo ....................................................Delete Cache?
+echo .....................................................Reset Cache?
 del C:\ProgramData\WildTangent\FateSteam\Cache
 rmdir /S /Q "C:\ProgramData\WildTangent\FateSteam\Cache"
 mkdir C:\ProgramData\WildTangent\FateSteam\Cache
