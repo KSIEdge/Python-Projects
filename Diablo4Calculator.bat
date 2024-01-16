@@ -9,4 +9,4 @@ echo Tier:%result%
 echo Monster Level:%monsterlevel%
 echo BonusLevel +10: 15% XP
 goto loop
-// .bat file that lets the user know what nightmare dungeon tier they need to play at for maxinum XP bonus
+echo .bat file that lets the user know what nightmare dungeon tier they need to play at for maxinum XP bonus
